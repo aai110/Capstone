@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="css.css">
+  <script type="text/javascript" src="jquery.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <div class="bar">
+    <ul>
+      <li class="head"> Beans Love Beers </li>
+      <li> <button type="button" name="button" class="btn_filter"><a href="as2.html">Home</a></button></li>
+      <li> <button type="button" name="button" id="select"class="btn_filter"><a href="#href">favorite=0</a></button></li>
+    </ul>
+  </div>
+
+  <br>
+  <br>
+
+
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" id="myInput" onkeyup="my()" placeholder="Search for beer.." name="search">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+
+
+  <div class="row">
+
+    <div class="column">
+
+      <div class="card">
+
+        <img src="1.png" alt="Avatar" style="width:20%;height: 30%;">
+        <div class="icon">
+        <button onclick="document.getElementById('myImage').src='dislike.png'"style="background-color: cadetblue;"
+         onclick="function()";>like</button>
+
+        <img id="myImage" src="likee.png" style="width:20px">
+        
+        <button onclick="document.getElementById('myImage').src='likee.png'"style="background-color: cadetblue;">dislike</button>
+        </div>
+
+        <h3>Buzz</h3>
+        <p class="card-text"> A light, crisp and bitter IPA brewed with English and American hops.A small batch brewed
+          only once....</p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="2.png" alt="Avatar" style="width:20%; height: 30%;">
+        <div class="icon">
+          <button onclick="document.getElementById('myImagee').src='dislike.png'"style="background-color: cadetblue;">like</button>
+  
+          <img id="myImagee" src="likee.png" style="width:20px">
+          
+          <button onclick="document.getElementById('myImagee').src='likee.png'"style="background-color: cadetblue;">dislike</button>
+          </div>
+        <h3>Trashy Blonde</h3>
+        <p class="card-text">A titillating,neurotic,peroxide punk of pale Ale. Combining attitude,style,substance,and a
+          li....</p>
+
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="3.png" alt="Avatar" style="width:20%; height: 30%;">
+        <div class="icon">
+          <button onclick="document.getElementById('two').src='dislike.png'"style="background-color: cadetblue;">like</button>
+  
+          <img id="two" src="likee.png" style="width:20px">
+          
+          <button onclick="document.getElementById('two').src='likee.png'"style="background-color: cadetblue;">dislike</button>
+          </div>
+        <h3>Berliner</h3>
+        <p class="card-text">Japanese citrus fruit intensifies the sour nature of this german classic....</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="4.png" alt="Avatar" style="width:20%;height: 30%;">
+        <div class="icon">
+          <button onclick="document.getElementById('three').src='dislike.png'"style="background-color: cadetblue;">like</button>
+  
+          <img id="three" src="likee.png" style="width:20px">
+          
+          <button onclick="document.getElementById('three').src='likee.png'"style="background-color: cadetblue;">dislike</button>
+          </div>
+        <h3>Pilser Lager</h3>
+        <p class="card-text"> Our Unleash the Yeast series was an epic experiment into the differences in aroma and
+          flavour provid....
+        </p>
+
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="5.png" alt="Avatar" style="width:20%; height: 30%;">
+        <div class="icon">
+          <button onclick="document.getElementById('four').src='dislike.png'"style="background-color: cadetblue;">like</button>
+  
+          <img id="four" src="likee.png" style="width:20px">
+          
+          <button onclick="document.getElementById('four').src='likee.png'"style="background-color: cadetblue;">dislike</button>
+          </div>
+        <h3>Avery brown Dredge</h3>
+        <p class="card-text"> An Imperial Pilsner in collaboration with bear writers.Tradition,Homage,Revolution. We
+          wanted to....</p>
+
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="6.png" alt="Avatar" style="width:20%; height: 30%;">
+        <div class="icon">
+          <button onclick="document.getElementById('five').src='dislike.png'"style="background-color: cadetblue;">like</button>
+  
+          <img id="five" src="likee.png" style="width:20px">
+          
+          <button onclick="document.getElementById('five').src='likee.png'"style="background-color: cadetblue;">dislike</button>
+          </div>
+
+        <h3>Electric india</h3>
+        <p class="card-text">Re-brewed as a spring seasonal,this beer-which appeared originally as an equity punk
+          shareholder..</p>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+  <script>
+    function myFunction() {
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName("li");
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+
+
+
+
+
+
+    $(".liketoggle").click(function () {
+      $(this).toggleClass("like unlike");
+      $(this).find("span").text(function (i, v) {
+        return v === 'Like' ? 'Unlike' : 'Like'
+      })
+    });
+
+  
+  let btnOne = document.querySelector('#one');
+
+ btnOne.addEventListener('click',() => btnOne.style.backgroundColor='#337ab7')
+
+
+
+
+var i=0;
+$("button").click(function() {
+document.getElementById("select").innerHTML="favorite"+i;
+});
+  </script>
+
+
+
+
+
+</body>
+
+</html>

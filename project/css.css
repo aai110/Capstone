@@ -1,0 +1,165 @@
+
+.icon{
+float: right;
+margin-right:10px ;
+
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: teal;    
+
+    
+  }
+
+  .btn{
+      float: right;
+  }
+  .img{
+      margin-right:10px ;
+      margin-top: 10px;
+  }
+
+  .bar {
+    width: 100%;
+    height: 30px;
+    height: 65px;
+    background-color: teal;    
+    }
+    
+    .head {
+        color: white;
+        padding: 5px;
+        font-size: -webkit-xxx-large;
+        /* height: 0px; */
+        margin-top: 0px;
+    }
+    .checked {
+        color: orange;
+      }
+    
+  li {
+
+    float: left;
+    display: block;
+    font-size: xx-large;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  
+  }
+  .btn_filter{
+      color:white;
+    margin-left: 1265px;
+    margin-right: -1252px;
+    float: right;
+    size: 15px;
+    background-color: teal;
+  }
+  
+  .search-container button {
+    
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: lightskyblue;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  .search-container button:hover {
+    background: #ccc;  
+  }
+.search-container {
+    float: none;
+
+    margin-top: 27px;
+    padding: 30px;
+    margin-left: 39%;
+  }
+  
+  .topnav input[type=text] {
+      width: 40px;
+      height: 15px;
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 25px;
+    border: none;
+  }
+  .main {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 25%;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .main:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  
+  .row {margin: 0 -5px;}
+  
+ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+ 
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  .img{
+      height: 20%;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    transition: 0.3s;
+    
+
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  myInput {
+    background-image: url('/css/searchicon.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 40%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+  
+  .hide{
+      color: white;
+   
+
+  }
+  .fa{
+    float: right;
+  }
+  
